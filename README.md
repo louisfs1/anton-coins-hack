@@ -22,6 +22,17 @@ addCoins = function(amount) {
 addCoins(99999999999)
 console.log("Enjoy your coins!")
 ```
+And if you (for some reason) want to remove some coins from your Anton account, paste this:
+```
+delCoins = function(amount) {
+    return typeof log != "undefined" && log.log({
+        event: "adjustCoins",
+        value: -amount
+    });
+};
 
+delCoins(99999999999)
+```
+(Not tested yet, will test)
 Have fun!
 ~ louisfs
