@@ -22,7 +22,8 @@ addCoins = function(amount) {
 addCoins(99999999999)
 console.log("Enjoy your coins!")
 ```
-And if you (for some reason) want to remove some coins from your Anton account, paste this:
+And if you (for some reason) want to remove some coins from your Anton account, make sure the coins you want to delete do not exceed the user accounts coins!
+Paste this:
 ```
 delCoins = function(amount) {
     return typeof log != "undefined" && log.log({
@@ -33,6 +34,6 @@ delCoins = function(amount) {
 
 delCoins(99999999999)
 ```
-(Not tested yet, will test)
+(Tested on September 20, 2026)
 Have fun!
 ~ louisfs
